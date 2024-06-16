@@ -18,7 +18,7 @@ services:
        - DOCKER_CERT_PATH=/certs
        - DOCKER_TLS_VERIFY=1
        # credenciales para publicar la imagen creada en Docker Hub, sustituye el contenido con tus datos
-       - USUARIO_DOCKERHUB=${USUARIO_DOCKERHUB}
+       - USUARIO_DOCKERHUB=${USUARIO_DOCKERHUB:-tfg2asircanaveral2024}
        - PASSWORD_DOCKERHUB=${PASSWORD_DOCKERHUB}
        #- JENKINS_NOMBRE_ADMINISTRADOR=nombre-administrador
        # lógicamente, no deberías escribir la contraseña en texto plano, sino usar una variable 
